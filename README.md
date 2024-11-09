@@ -1,0 +1,5 @@
+By using HTML page with INNER-CSS & INTERNAL-JAVASCRIPT i done a project which looks like moniter of an ATM.
+It includes three buttons that are checkbalance,withdraw & deposit.
+when you click on the < checkbalance > button you get a pop-up with "please enter you pin" message by default i given a pin as 1234 when you enter correct pin it shows the balance otherwise it gives another pop-up with "incorrect pin" message.
+when you click on the < withdraw > button you get a pop-up with "please enter you pin" message after entering the correct pin it shows another pop-up "enter the withdraw amount" message if you enter the amount if entering amount is less or equla to balance it gives "withdraw successfull" pop-up message otherwise it gives "insufficient balance" pop-up message.
+when you click on the <deposit> button you directly get a pop-up as "enter the deposit amount" if you enter the amount greater than zero it gives pop-up as "deposit successful" otherwise it gives pop-up as "deposit failed".
