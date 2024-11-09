@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ATM</title>
+    <script>
+    let current_balance=0;
+    let b,p;
+    const pin=1234;
+    var check_balance=()=>
+    {
+        p=prompt('please enter you pin')
+        if(p==pin)
+        alert('your balance is '+current_balance+' -/')
+        else
+        alert('incorrect pin')
+    }
+    var withdraw=()=>
+    {
+        p=prompt('please enter you pin')
+        if(p==pin)
+    {
+        b=prompt('enter the withdraw amount');
+        if(b<=current_balance)
+    {
+        current_balance=current_balance-b;
+        alert('withdraw successfull');
+    }
+    else
+    {
+        alert('insufficient balance');
+    }
+    }
+    else
+        alert('incorrect pin')
+   
+    }
+    var deposit=()=>
+    {
+       b=prompt('enter the deposit amount') 
+       if(b>0)
+       {
+       current_balance=parseInt(current_balance)+parseInt(b);
+       alert('deposit successful')
+       }
+       else
+       alert('deposit failed')
+    }
+</script>
+</head>
+<body style="background-color: black;">
+    <div style="text-align: center;"><img src="https://5.imimg.com/data5/KR/LT/UQ/SELLER-61549340/whir-label-atm-500x500.jpg" alt="" style="width: 500px; height: 300px;" ></div>
+    <div style="text-align: center;">
+  <button onclick="check_balance()" style="color: blue;">Check Balance</button>  
+  <button onclick="withdraw()" style="color: red;" >Withdraw</button>
+  <button onclick="deposit()" style="color: rgb(11, 248, 11);">Deposit</button>
+</div>
+</body>
+</html>
